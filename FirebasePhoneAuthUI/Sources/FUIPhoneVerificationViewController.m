@@ -102,6 +102,7 @@ static NSString *const kLinkPlaceholderPattern = @"\\[([^\\]]+)\\]";
   nextButtonItem.accessibilityIdentifier = kNextButtonAccessibilityID;
   self.navigationItem.rightBarButtonItem = nextButtonItem;
   self.navigationItem.rightBarButtonItem.enabled = NO;
+  self.navigationItem.rightBarButtonItem.hidden = YES;
   _tosView.authUI = self.authUI;
   [_tosView useFooterMessage];
 }
@@ -122,6 +123,7 @@ static NSString *const kLinkPlaceholderPattern = @"\\[([^\\]]+)\\]";
 
 - (void) entryIsCompletedWithCode:(NSString *)code {
   self.navigationItem.rightBarButtonItem.enabled = YES;
+  [self onNext:_codeField.codeEntry];
 }
 
 #pragma mark - Actions
