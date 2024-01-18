@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Auth' do |auth|
-    auth.dependency 'FirebaseAuthUI', '~> 13.0'
+    auth.dependency 'FirebaseAuthUI', '~> 13.1.1'
   end
 
   s.subspec 'Anonymous' do |anonymous|
@@ -55,7 +55,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Phone' do |phone|
-    phone.dependency 'FirebasePhoneAuthUI', '~> 13.0'
+    phone.dependency 'FirebasePhoneAuthUI', '~> 13.1.1'
   end
 
 end
