@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name         = 'FirebasePhoneAuthUI'
-  s.version      = '13.1.0'
+  s.version      = '13.1.1'
   s.summary      = 'A phone auth provider for FirebaseAuthUI.'
   s.homepage     = 'https://github.com/firebase/FirebaseUI-iOS'
   s.license      = { :type => 'Apache 2.0', :file => 'LICENSE' }
-  s.source       = { :git => 'https://github.com/firebase/FirebaseUI-iOS.git', :tag => 'v' + s.version.to_s}
+  s.source       = { :git => 'https://github.com/dacvn777sg/FirebaseUI-iOS.git', :tag => 'v' + s.version.to_s}
   s.author       = 'Firebase'
   s.platform = :ios
   s.ios.deployment_target = '11.0'

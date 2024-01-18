@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name         = 'FirebaseUI'
-  s.version      = '13.1.0'
+  s.version      = '13.1.1'
   s.summary      = 'UI binding libraries for Firebase.'
   s.homepage     = 'https://github.com/firebase/FirebaseUI-iOS'
   s.license      = { :type => 'Apache 2.0', :file => 'LICENSE' }
-  s.source       = { :git => 'https://github.com/firebase/FirebaseUI-iOS.git', :tag => 'v' + s.version.to_s}
+  s.source       = { :git => 'https://github.com/dacvn777sg/FirebaseUI-iOS.git', :tag => 'v' + s.version.to_s}
   s.author       = 'Firebase'
   s.platform = :ios
   s.ios.deployment_target = '12.0'
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Auth' do |auth|
-    auth.dependency 'FirebaseAuthUI', '~> 13.0'
+    auth.dependency 'FirebaseAuthUI'
   end
 
   s.subspec 'Anonymous' do |anonymous|
@@ -55,7 +55,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Phone' do |phone|
-    phone.dependency 'FirebasePhoneAuthUI', '~> 13.0'
+    phone.dependency 'FirebasePhoneAuthUI'
   end
 
 end
