@@ -94,15 +94,7 @@ static NSString *const kLinkPlaceholderPattern = @"\\[([^\\]]+)\\]";
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-
-  UIBarButtonItem *nextButtonItem =
-      [FUIAuthBaseViewController barItemWithTitle:FUIPhoneAuthLocalizedString(kPAStr_Next)
-                                           target:self
-                                           action:@selector(next)];
-  nextButtonItem.accessibilityIdentifier = kNextButtonAccessibilityID;
-  self.navigationItem.rightBarButtonItem = nextButtonItem;
-  self.navigationItem.rightBarButtonItem.enabled = NO;
-  self.navigationItem.rightBarButtonItem.hidden = YES;
+  
   _tosView.authUI = self.authUI;
   [_tosView useFooterMessage];
 }
